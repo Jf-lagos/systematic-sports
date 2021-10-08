@@ -1,8 +1,8 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import { getAuth, onAuthStateChanged } from '@firebase/auth'
+import { initializeApp } from 'firebase/app'
+import { useState, useEffect, useContext, createContext } from 'react'
  
-const firebaseConfig = {
+export const firebaseApp = initializeApp ({
    apiKey: "AIzaSyA30MqO1R6JR18enIvwfMl8HuVjAF_mEMc",
    authDomain: "systemic-sports.firebaseapp.com",
    projectId: "systemic-sports",
@@ -10,10 +10,22 @@ const firebaseConfig = {
    messagingSenderId: "214474989655",
    appId: "1:214474989655:web:c9269c2fc5f01e150d0312",
    measurementId: "G-Q9SYKDGLMQ"
- };
-  // Initialize Firebase
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-const auth = firebase.auth();
-export { auth };
-export default db;
+ });
+
+export const AuthContext = createContext()
+
+export const AuthContextProvider = props => {
+  const [user, setUser] = useState()
+  const [error, setError] = useState()
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(getAuth(), setUser, setError)
+    return() => unsubscribe()
+  }, [])
+  return <AuthContext.Provider value={{ user, error }} {...props} />
+}
+
+export const useAuthState = () => {
+  const auth = useContext(AuthContext)
+  return { ...auth, isAuthenticated: auth.user != null }
+}

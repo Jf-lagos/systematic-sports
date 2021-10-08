@@ -1,32 +1,49 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import Home from './components/Home';
-import Signin from './components/Signin';
-import { auth } from './firebase';
+import { BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom'
+import { Home } from './Home'
+import { SignUp } from './SignUp'
+import { Login } from './Login'
+import { AuthContextProvider, useAuthState } from './firebase'
+
+const AuthenticatedRoute = ({ component: C, ...props }) => {
+  const { isAuthenticated } = useAuthState()
+  return (
+    <Route
+      {...props}
+      render={routeProps =>
+      isAuthenticated ? <C {...routeProps} /> : <Redirect to="/login" />
+      }
+      />
+  )
+}
+const UnauthenticatedRoute = ({ component: C, ...props }) => {
+  const { isAuthenticated } = useAuthState()
+  return (
+    <Route
+      {...props}
+      render={routeProps =>
+      !isAuthenticated ? <C {...routeProps} /> : <Redirect to="/" />
+      }
+      />
+  )
+}
 
 function App() {
-  const [user, setUser] = useState(null)
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(userAuth => {
-      const user = {
-        uid: userAuth?.uid,
-        email: userAuth?.email
-      }
-      if (userAuth) {
-        console.log(userAuth)
-        setUser(user)
-      } else {
-        setUser(null)
-      }
-    })
-    return unsubscribe
-  }, [])
   return (
-    <div className="App">
-      {user ? <Home /> : <Signin />}
-
-    </div>
-  );
+    <AuthContextProvider>
+      <Router>
+      <div>
+        holllllaaaa
+        <Link to="/">Home</Link> | <Link to="/login">Login</Link> | {' '}
+        <Link to="/signup">SignUp</Link>
+      </div>
+        <AuthenticatedRoute exact path="/" component={Home} />
+        <UnauthenticatedRoute exact path="/signup" component={SignUp} />
+        <UnauthenticatedRoute exact path="/login" component={Login} />
+      </Router>
+    </AuthContextProvider>
+  )
 }
+
+
 
 export default App;
