@@ -42,7 +42,6 @@ import '../AlphaTable.css'
   };
 
 const LivMan = ({EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion, FixtureId, TeamId }) => {
-    if (!Market) return <div />;
     return (
         <table>
         <tbody>
@@ -61,34 +60,4 @@ const LivMan = ({EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion
     
     );
   };
-const ArsSpur = ({ Market, CalcProb, BookieOdds, Alpha }) => {
-    if (!Market) return <div />;
-    return (
-        <table>
-        <thead>
-          <tr>
-            <th>Tester</th>
-            <th>Prober</th>
-            <th>Probe Card</th>
-            <th>Tool Owner</th>
-            <th>Tool Owner</th>
-            <th>Tool Owner</th>
-            <th>Tool Owner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-{/*           <td>{Market}</td>
-            <td>{CalcProb}</td>
-            <td>{BookieOdds}</td>
-            <td>{Alpha}</td>
-            <td>{KellyCriterion}</td>
-            <td>{FixtureId}</td>
-            <td>{TeamId}</td> */}
-          </tr>
-        </tbody>      
-      </table>
-    );
-  };
-
 export default AlphaTable

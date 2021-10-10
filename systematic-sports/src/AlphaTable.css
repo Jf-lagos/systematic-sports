@@ -1,8 +1,7 @@
 .header {
-    background-color: #cfcfcf;
+    background-color:rgb(223, 223, 223);
     display: flex;
     font-size: 20px;
-    color: #10375c;
     width: 1200px;
   }
 
@@ -48,5 +47,34 @@ tbody tr:nth-child(even){
 
 .alphaTable {
   margin-left: 110px;
-  margin-top: 200px;
+  margin-top: 100px;
+}
+.alphaTable1 {
+  margin-left: 110px;
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.headerGoal > p {
+  margin-right: 20px;
+}
+
+.zero {
+  margin-left: 0px;
+}
+
+.two {
+  margin-left: 20px;
+}
+.three {
+  margin-left: 30px;
+}
+.four {
+  margin-left: 25px;
+}
+.five {
+  margin-left: 25px;
+}
+.six {
+  margin-left: 20px;
 }

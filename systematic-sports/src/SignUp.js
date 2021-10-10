@@ -20,7 +20,7 @@ return (
     <div className="signUp">
     <h1>Sign Up</h1>
     <form onSubmit={handleSubmit}>
-        <input name ="name" placeholder="Pseudo" type="text" />
+        <input name ="name" placeholder="name" type="text" />
         <input name ="email" placeholder="Email" type="email" />
         <input name ="password" placeholder="Password" type="password" />
         <button type="submit">Sign Up</button>
