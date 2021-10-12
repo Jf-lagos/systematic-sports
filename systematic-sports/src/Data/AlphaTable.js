@@ -7,6 +7,7 @@ import '../AlphaTable.css'
     return (
       <>
         <div className="table">
+        
         <div className="header">
           <p>EntityName</p>
           <p>Market</p>
