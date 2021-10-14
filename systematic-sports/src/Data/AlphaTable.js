@@ -7,7 +7,7 @@ import '../AlphaTable.css'
     return (
       <>
         <div className="table">
-        
+
         <div className="header">
           <p>EntityName</p>
           <p>Market</p>
@@ -55,10 +55,13 @@ const LivMan = ({EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion
             <td className="tableCell">{KellyCriterion}</td>
             <td className="tableCell">{FixtureId}</td>
             <td className="tableCell">{TeamId}</td>
+            <td contentEditable='true'>voiiiiiii</td>
           </tr>
         </tbody>      
-      </table>
-    
+      </table>  
     );
   };
+
+
+  
 export default AlphaTable
