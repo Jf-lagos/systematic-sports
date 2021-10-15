@@ -14,13 +14,13 @@ export const Home = ( ) => {
     return (
         <>
             <Navbar/>
-            <div className="alphaTable">
+            <div className="tables">
             <AlphaTable />
             </div>
-            <div className="alphaTable">
+            <div className="tables">
             <FixtureAnalysis/>
             </div>
-            <div className="alphaTable1">
+            <div className="tables">
             <GoalProbability />
             </div>
             {/* <h1>Welcome {user?.email}</h1> */}

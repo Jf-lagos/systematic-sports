@@ -6,7 +6,7 @@ import '../AlphaTable.css'
 export const AlphaTable = () => {
   return (
     <>
-      <div className="table">
+      <div className="table_alpha">
 
         <div className="header_alpha">
           <div className="entityName_header">
