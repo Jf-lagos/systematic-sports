@@ -1,20 +1,54 @@
-.header {
-    background-color:rgb(223, 223, 223);
-    display: flex;
-    font-size: 20px;
-    width: 1200px;
-  }
+/* Header */
+.header_alpha {
+  background-color:rgb(223, 223, 223);
+  display: flex;
+  font-size: 17px;
+  max-width: 1200px;
+  height: 50px;
+}
 
-  .header > p {
-    margin-right: 70px;
-  }
+.header_alpha > p {
+  max-width: 1200px;
+}
 
-.entityName {
+.entityName_header {
   width: 150px;
 }
 
-.tableCell {
-  width: 150px;
+.market_header {
+  width: 130px;
+}
+.calcProb_header {
+  width: 130px;
+
+}
+.bookieOdds_header {
+  width: 130px;
+}
+.alpha_header {
+  width: 130px;
+}
+.kellyCriterion_header {
+  width: 130px;
+}
+.fixetureId_header {
+  width: 130px;
+}
+.teamID_header {
+  width: 130px;
+}
+.stack_header {
+  width: 130px;
+}
+
+.tableCell_alpha {
+  width: 130px;
+}
+
+.tableCell_alpha_editable {
+  width: 130px;
+  color: gray;
+  font-style: italic;
 }
 
 .table {
@@ -26,7 +60,6 @@
 
 th, td {
   /* border: 1px solid #343a40; */
-
   text-align: left;
 }
 
@@ -34,43 +67,15 @@ th {
   background-color: #087f5b;
   color: #fff;
   width: 25%;
+  border: 1px solid red;
 }
+
 
 tbody tr:nth-child(odd){
   background-color: #f8f9fa;
 }
 
-
-.alphaTable {
-  margin-left: 110px;
-  margin-top: 100px;
-}
-.alphaTable1 {
-  margin-left: 110px;
-  margin-top: 100px;
-  margin-bottom: 400px;
+.tableCell_alpha_entity_name {
+  width: 150px;
 }
 
-.headerGoal > p {
-  margin-right: 20px;
-}
-
-.zero {
-  margin-left: 0px;
-}
-
-.two {
-  margin-left: 20px;
-}
-.three {
-  margin-left: 30px;
-}
-.four {
-  margin-left: 25px;
-}
-.five {
-  margin-left: 25px;
-}
-.six {
-  margin-left: 20px;
-}

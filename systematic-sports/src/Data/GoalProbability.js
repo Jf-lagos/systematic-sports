@@ -1,6 +1,6 @@
 import React from 'react'
 import { goal_probability_heatmap } from '../GameData.js'
-import '../AlphaTable.css'
+import '../GoalProbability.css'
 
 
   export const GoalProbability = () => {
@@ -48,7 +48,7 @@ const LivMan = ({TeamId, TeamName, Zero, One, Two, Three, Four, Five, Six }) => 
         <table>
         <tbody>
           <tr>
-            <td className="entityName">{TeamId}</td>
+            <td className="teamId">{TeamId}</td>
             <td className="tableCell">{TeamName}</td>
             <td className="tableCell">{Zero}</td>
             <td className="tableCell">{One}</td>

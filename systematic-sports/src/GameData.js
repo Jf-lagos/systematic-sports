@@ -76,7 +76,7 @@ export const fixture_analysis_table_json = [
 
 //# heatmap table
 export const goal_probability_heatmap = [
-    {'FixtureId': 9999,
+{'FixtureId': 9999,
      'TeamId': 19,
      'TeamName': 'Man City',
      'Zero': 0.15,

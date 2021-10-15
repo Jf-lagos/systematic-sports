@@ -1,0 +1,76 @@
+.header {
+    background-color:rgb(223, 223, 223);
+    display: flex;
+    font-size: 20px;
+    width: 1200px;
+  }
+
+  .header > p {
+    margin-right: 70px;
+  }
+
+  .teamId {
+    width: 100px;
+  }
+
+.tableCell {
+  width: 150px;
+}
+
+.table {
+  max-width: 1200px;
+  border: 1px solid black;
+  font-size: 14px;
+  margin-left: 250;
+}
+
+th, td {
+  /* border: 1px solid #343a40; */
+
+  text-align: left;
+}
+
+th {
+  background-color: #087f5b;
+  color: #fff;
+  width: 25%;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #f8f9fa;
+}
+
+
+.alphaTable {
+  margin-left: 110px;
+  margin-top: 100px;
+}
+.alphaTable1 {
+  margin-left: 110px;
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.headerGoal > p {
+  margin-right: 20px;
+}
+
+.zero {
+  margin-left: 0px;
+}
+
+.two {
+  margin-left: 20px;
+}
+.three {
+  margin-left: 30px;
+}
+.four {
+  margin-left: 25px;
+}
+.five {
+  margin-left: 25px;
+}
+.six {
+  margin-left: 20px;
+}
