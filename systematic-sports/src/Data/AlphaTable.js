@@ -59,6 +59,8 @@ export const AlphaTable = () => {
           })}
         </div>
       </div>
+      <button>clear bet</button>
+        <button>Submit bet</button>
     </>
   );
 };
