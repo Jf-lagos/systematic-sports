@@ -50,6 +50,7 @@
 }
 .teamID_header {
   width: 130px;
+  margin-right: 20px;
 }
 .stack_header {
   width: 130px;
@@ -67,10 +68,20 @@
 
 .tableCell_alpha_editable {
   width: 130px;
-  color: gray;
-  font-style: italic;
+
 }
 
+.alphaButton {
+  border: 1px solid black;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+
+.button_clear_submit {
+  margin-left: 1030px;
+}
 
 
 

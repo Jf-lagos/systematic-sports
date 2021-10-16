@@ -6,7 +6,7 @@ import '../FixtureAnalysis.css'
   export const FixtureAnalysis = () => {
     return (
       <>
-      <button>Fixture filter</button>
+      <button className="fixtureButton">Fixture filter</button>
         <div className="table_fixtureA ">
         <div className="header_fixtureA">
           <div className="teamName_header">

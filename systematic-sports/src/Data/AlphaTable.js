@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { alpha_table_json } from '../GameData.js'
 import '../AlphaTable.css'
 
@@ -6,6 +6,8 @@ import '../AlphaTable.css'
 export const AlphaTable = () => {
   return (
     <>
+         <button className="alphaButton">League filter</button>
+        <button className="alphaButton">Date filter</button>
       <div className="table_alpha">
 
         <div className="header_alpha">
@@ -59,13 +61,17 @@ export const AlphaTable = () => {
           })}
         </div>
       </div>
-      <button>clear bet</button>
-        <button>Submit bet</button>
+      <div className="button_clear_submit">
+      <button className="alphaButton">clear bet</button>
+        <button className="alphaButton" >Submit bet</button>
+        </div>
     </>
   );
 };
 
 const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion, FixtureId, TeamId }) => {
+  const [searchString, setSearchString] = useState('');
+
   return (
     <table>
       <tbody>
@@ -78,9 +84,15 @@ const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterio
           <td className="tableCell_alpha">{KellyCriterion}</td>
           <td className="tableCell_alpha">{FixtureId}</td>
           <td className="tableCell_alpha">{TeamId}</td>
-          <td className="tableCell_alpha_editable" contentEditable='true'>enter amount</td>
+          <td className="tableCell_alpha_editable"><input
+        id="myInput"  
+        type="text"
+        value={searchString}
+        onChange={(e) => setSearchString(e.target.value)}
+      /></td>
         </tr>
       </tbody>
+      
     </table>
   );
 };

@@ -54,6 +54,13 @@
     width: 190px;
   }
   
+  .fixtureButton {
+    border: 1px solid black;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 30px 10px 0px;
+  }
 
   
   
