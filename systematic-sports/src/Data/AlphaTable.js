@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 import { alpha_table_json } from '../GameData.js'
 import '../AlphaTable.css'
+import Stack from '../Stack.js'
 
 
 export const AlphaTable = () => {
@@ -35,9 +36,9 @@ export const AlphaTable = () => {
           <div className="teamID_header">
             <p>TeamId</p>
           </div>
-          <div className="stack_header">
+{/*           <div className="stack_header">
             <p>Stack</p>
-          </div>
+          </div> */}
 
 
         </div>
@@ -56,22 +57,27 @@ export const AlphaTable = () => {
                   FixtureId={data.FixtureId}
                   TeamId={data.TeamId}
                 />
+                <Stack/>
               </div>
             );
           })}
         </div>
       </div>
-      <div className="button_clear_submit">
+{/*       <div className="button_clear_submit">
       <button className="alphaButton">clear bet</button>
         <button className="alphaButton" >Submit bet</button>
-        </div>
+        </div> */}
     </>
   );
 };
 
 const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion, FixtureId, TeamId }) => {
   const [searchString, setSearchString] = useState('');
-
+  function handleSubmit(e) {
+    e.preventDefault();
+    // clearing the values
+    setSearchString("");
+  }
   return (
     <table>
       <tbody>
@@ -84,15 +90,14 @@ const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterio
           <td className="tableCell_alpha">{KellyCriterion}</td>
           <td className="tableCell_alpha">{FixtureId}</td>
           <td className="tableCell_alpha">{TeamId}</td>
-          <td className="tableCell_alpha_editable"><input
+{/*           <td className="tableCell_alpha_editable"><input
         id="myInput"  
         type="text"
         value={searchString}
         onChange={(e) => setSearchString(e.target.value)}
-      /></td>
+      /></td> */}
         </tr>
       </tbody>
-      
     </table>
   );
 };
