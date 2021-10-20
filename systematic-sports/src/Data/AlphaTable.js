@@ -57,7 +57,6 @@ export const AlphaTable = () => {
                   FixtureId={data.FixtureId}
                   TeamId={data.TeamId}
                 />
-                <Stack/>
               </div>
             );
           })}

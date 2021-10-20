@@ -1,20 +1,20 @@
-import React from "react";
-import { useForm }from 'react-hook-form';
+import React from 'react'
 
-export default function Stack() {
-    const {register, handleSubmit} = useForm();
+const Stack = () => {
 
-    const onSubmit = (data) => {
-        console.log(data)
-    }
+    
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" name="stack" ref={register}/>
-            <input type="text" name="stack" ref={register}/>
-            <input type="text" name="stack" ref={register}/>
-            <input type="text" name="stack" ref={register}/>
-            <input type="submit"/>
-        </form>
+        <div>
+ <form id="form1" name="zoo">
+
+ <label>text1</label><input type="text" />
+ <button type="reset" value="Reset">Reset</button>
+ <button type="submit" value="Submit">Submit</button>
+
+ </form>
+        </div>
     )
 }
+
+export default Stack

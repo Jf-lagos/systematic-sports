@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 import { AlphaTable  } from '../src/Data/AlphaTable'
 import FixtureAnalysis from './Data/FixtureAnalysis'
 import GoalProbability from './Data/GoalProbability'
+import Stack from './Stack'
+
 
 
 
@@ -17,12 +19,14 @@ export const Home = ( ) => {
             <div className="tables">
             <AlphaTable />
             </div>
+            <Stack/>
             <div className="tables">
             <FixtureAnalysis/>
             </div>
             <div className="tables">
             <GoalProbability />
             </div>
+            
             {/* <h1>Welcome {user?.email}</h1> */}
             <button onClick={() => signOut(getAuth())}>Sign Out</button>
         </>
