@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from './Navbar' 
+import Navbar from './Navbar'
 
 const PerformancePage = () => {
     return (
         <div>
-           <Navbar/> 
+            <Navbar/>
         </div>
     )
 }
 
 export default PerformancePage
+

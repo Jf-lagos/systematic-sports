@@ -4,6 +4,7 @@ import { SignUp } from './SignUp'
 import { Login } from './Login'
 import { AuthContextProvider, useAuthState } from './firebase'
 import PerformancePage from './PerformancePage'
+import About from './About'
 
 
 const AuthenticatedRoute = ({ component: C, ...props }) => {
@@ -39,6 +40,7 @@ function App() {
       </div> */}
         <AuthenticatedRoute exact path="/" component={Home} />
         <AuthenticatedRoute exact path="/performance" component={PerformancePage} />
+        <AuthenticatedRoute exact path="/about" component={About} />
         <UnauthenticatedRoute exact path="/signup" component={SignUp} />
         <UnauthenticatedRoute exact path="/login" component={Login} />
       </Router>

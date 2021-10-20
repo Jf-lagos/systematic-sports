@@ -88,5 +88,17 @@
   width: 130px;
 }
 
-
+.aboutSection {
+  width: 1000px;
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  margin-left: 200px;
+}
+.aboutSection > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
 
