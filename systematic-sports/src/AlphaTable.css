@@ -6,8 +6,7 @@
 }
 /* Table */
 .table_alpha {
-  max-width: 1200px;
-  border: 1px solid black;
+  max-width: 1000px;
   font-size: 14px;
   margin-left: 250;
 }
@@ -60,10 +59,15 @@
 
 .tableCell_alpha_entity_name {
   width: 150px;
+  background-color:rgb(223, 223, 223);
+
 }
 
 .tableCell_alpha {
   width: 130px;
+  height: 30px;
+ 
+  text-align: center;
 }
 
 .tableCell_alpha_editable {

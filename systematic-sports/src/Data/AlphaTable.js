@@ -1,7 +1,6 @@
 import {React, useState} from 'react'
 import { alpha_table_json } from '../GameData.js'
 import '../AlphaTable.css'
-import Stack from '../Stack.js'
 
 
 export const AlphaTable = () => {
@@ -71,12 +70,12 @@ export const AlphaTable = () => {
 };
 
 const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterion, FixtureId, TeamId }) => {
-  const [searchString, setSearchString] = useState('');
+/*   const [searchString, setSearchString] = useState('');
   function handleSubmit(e) {
     e.preventDefault();
     // clearing the values
     setSearchString("");
-  }
+  } */
   return (
     <table>
       <tbody>
