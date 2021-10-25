@@ -13,6 +13,7 @@ main {
     color: black;
     font-family: Helvetica;
     font-weight: 300;
+    width: 100%;
 }
 
 .navbar__title {

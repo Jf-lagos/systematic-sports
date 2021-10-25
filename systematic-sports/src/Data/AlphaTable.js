@@ -41,7 +41,7 @@ export const AlphaTable = () => {
 
 
         </div>
-        <div className="body">
+        <div className="body_alpha">
           {alpha_table_json.map((data, key) => {
             return (
               <div key={key}>
@@ -78,8 +78,8 @@ const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterio
   } */
   return (
     <table>
-      <tbody>
-        <tr>
+      <tbody >
+        <tr className="table_body_alpha">
           <td className="tableCell_alpha_entity_name">{EntityName}</td>
           <td className="tableCell_alpha">{Market}</td>
           <td className="tableCell_alpha">{CalcProb}</td>

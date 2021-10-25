@@ -18,8 +18,8 @@ export const Home = ( ) => {
             <Navbar/>
             <div className="tables">
             <AlphaTable />
-            </div>
             <Stack/>
+            </div>
             <div className="tables">
             <FixtureAnalysis/>
             </div>

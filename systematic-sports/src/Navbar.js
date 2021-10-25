@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => (
     <header className='navbar'>
         <div className='navbar__title navbar__item'>systematic sports</div>
-        <div class="dropdown">
+            <div class="dropdown">
             <button class="navbar__item dropbtn"><Link to="/about">about</Link></button>
             <div class="dropdown-content navbar__item">
                 <a href="#BettingGuide">Betting Guide</a>
