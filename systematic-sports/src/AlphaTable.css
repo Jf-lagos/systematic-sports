@@ -1,64 +1,63 @@
 
-/* All Tables */
-.tables {
-  margin-left: 110px;
-  margin-top: 100px;
-}
+
 /* Table */
-.table_alpha {
-  max-width: 1000px;
-  font-size: 14px;
-  margin-left: 250;
-}
+
 
 /* Header */
 .header_alpha {
   background-color:rgb(223, 223, 223);
   display: flex;
   font-size: 17px;
-  min-width: 980px;
-  height: 50px;
-  border: 1px solid blue;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .entityName_header {
-  width: 180px;
-  margin-left: 30px;
+  width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 
 .market_header {
-  width: 120px;
+  width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 .calcProb_header {
-  width: 120px;
+  width: 130px;
+  text-align: center;
   border: 1px solid blue;
 
 }
 .bookieOdds_header {
-  width: 120px;
+  width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 .alpha_header {
-  width: 90px;
+  width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 .kellyCriterion_header {
   width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 .fixetureId_header {
   width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 .teamID_header {
-  width: 90px;
+  width: 130px;
+  text-align: center;
 
   border: 1px solid blue;
 }
 .stack_header {
   width: 130px;
+  text-align: center;
   border: 1px solid blue;
 }
 
@@ -113,14 +112,5 @@
   margin-top: 90px;
 }
 
-.body_alpha {
-  border: 1px solid green;
-  min-width: 980px;
-}
 
 
-@media (min-width: 700px) {
-  .tables {
-    max-width: 500px;
-  }
-}

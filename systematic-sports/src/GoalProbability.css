@@ -1,59 +1,62 @@
-.table_goal{
-  max-width: 1200px;
-  border: 1px solid black;
-  font-size: 14px;
-  margin-left: 250;
- }
+
   
  /* Header */
  .header_goal {
   background-color:rgb(223, 223, 223);
   display: flex;
   font-size: 17px;
-  max-width: 1200px;
-  height: 50px;
+  width: 70%;
+  margin: 0 auto;
  }
   
- .header_goal > p {
-  max-width: 1200px;
+ .header_goal > div {
+  border: 1px solid blue;
  }
   
   
  .TeamId_goal_header {
   width: 180px;
+  text-align: center;
  }
   
  .teamName_goal_header {
   width: 190px;
+  text-align: center;
  }
  .zero_goal_header {
   width: 190px;
-  
+  text-align: center;
  }
  .one_goal_header{
   width: 190px;
+  text-align: center;
  }
  .two_goal_header{
   width: 190px;
+  text-align: center;
  }
  .three_goal_header {
   width: 190px;
+  text-align: center;
  }
  .four_goal_header {
   width: 190px;
+  text-align: center;
  }
  .five_goal_header{
   width: 190px;
+  text-align: center;
  }
  
  /*Cells*/
 
-.tableCell_teamId_goal{
-  width: 180px;
-}
+/* .tableCell_teamId_goal{
+  width: 100px;
+  border: 1px solid blue;
+} */
 
-.tableCell_goal {
+/* .tableCell_goal {
   width: 190px;
-}
+} */
 
  

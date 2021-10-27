@@ -8,9 +8,6 @@ import '../GoalProbability.css'
       <>
         <div className="table_goal">
         <div className="header_goal">
-          <div className="TeamId_goal_header">
-            <p>Team Id</p>
-          </div>
           <div className="teamName_goal_header">
             <p>Team Name</p>
           </div>
@@ -32,7 +29,9 @@ import '../GoalProbability.css'
           <div className="five_goal_header">
             <p>Five</p>
           </div>
- 
+          <div className="TeamId_goal_header">
+            <p>Team Id</p>
+          </div>
         </div>
         <div className="body">
         {goal_probability_heatmap.map((data, key) => {
@@ -63,7 +62,6 @@ const LivMan = ({TeamId, TeamName, Zero, One, Two, Three, Four, Five }) => {
         <table>
         <tbody>
           <tr>
-            <td className="tableCell_teamId_goal">{TeamId}</td>
             <td className="tableCell_goal">{TeamName}</td>
             <td className="tableCell_goal">{Zero}</td>
             <td className="tableCell_goal">{One}</td>
@@ -71,6 +69,7 @@ const LivMan = ({TeamId, TeamName, Zero, One, Two, Three, Four, Five }) => {
             <td className="tableCell_goal">{Three}</td>
             <td className="tableCell_goal">{Four}</td>
             <td className="tableCell_goal">{Five}</td>
+            <td className="tableCell_teamId_goal">{TeamId}</td>
           </tr>
         </tbody>      
       </table>

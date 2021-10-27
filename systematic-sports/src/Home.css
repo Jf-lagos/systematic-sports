@@ -1,0 +1,24 @@
+.home_container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rebeccapurple;
+   
+}
+
+.tables {
+    
+}
+
+/* .tables {
+    margin-left: 110px;
+    margin-top: 100px;
+    min-width: 1000px;
+  } */
+
+
+
+@media (min-width: 700px) {
+    .tables {
+        max-width: 500px;
+    }
+}

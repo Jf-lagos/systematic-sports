@@ -2,10 +2,6 @@ body {
     margin: 0;
 }
 
-main {
-    margin: 16px;
-}
-
 .navbar {
     display: flex;
     align-items: center;

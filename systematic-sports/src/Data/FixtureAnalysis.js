@@ -31,9 +31,9 @@ import '../FixtureAnalysis.css'
             <p>Team ID</p>
           </div>
         </div>
-        <div className="body">
+        <div className="table_fixture_body">
         {fixture_analysis_table_json.map((data, key) => {
-            return (
+            return (         
               <div key={key}>
                 <Analysis
                   key={key}
@@ -56,7 +56,7 @@ import '../FixtureAnalysis.css'
 
 const Analysis = ({TeamName, Position, Form, AveragexG, OppositionxGC, FixtureId, TeamId }) => {
     return (
-        <table>
+        <table className="table_fixture">
         <tbody>
           <tr>
             <td className="tableCell_fixtureA_teamName">{TeamName}</td>
