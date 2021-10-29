@@ -4,9 +4,8 @@ import Navbar from './Navbar'
 import { AlphaTable  } from '../src/Data/AlphaTable'
 import FixtureAnalysis from './Data/FixtureAnalysis'
 import GoalProbability from './Data/GoalProbability'
-import Stack from './Stack'
 import './Home.css'
-import Table from './Table'
+
 
 
 
@@ -19,21 +18,8 @@ export const Home = ( ) => {
         <>
             
             <Navbar/>
-{/*             <div className="home_container">
-            <div className="tables">
-            <AlphaTable />
-            <Stack/>
-            </div>
-            <div className="tables">
-            <FixtureAnalysis/>
-            </div>
-            <div className="tables">
-            <GoalProbability />
-            </div>
-            </div> */}
-            <div className="ouais">
+            <div className="container1">
             <AlphaTable /> 
-            <Stack/>
             </div>
             <FixtureAnalysis/>
             <GoalProbability />

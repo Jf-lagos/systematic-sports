@@ -6,8 +6,10 @@ import '../AlphaTable.css'
 export const AlphaTable = () => {
   return (
     <>
+    <div className="button_container">
          <button className="alphaButton">League filter</button>
         <button className="alphaButton">Date filter</button>
+        </div>
       <div className="table_alpha">
 
         <div className="header_alpha">
@@ -35,9 +37,9 @@ export const AlphaTable = () => {
           <div className="teamID_header">
             <p>TeamId</p>
           </div>
-{/*           <div className="stack_header">
+          <div className="stack_header">
             <p>Stack</p>
-          </div> */}
+          </div>
 
 
         </div>
@@ -60,6 +62,11 @@ export const AlphaTable = () => {
             );
           })}
         </div>
+        <div className="button_stack">
+        <button className="alphaButton">Submit</button>
+        <button className="alphaButton">Clear</button>
+        </div>
+        
       </div>
 {/*       <div className="button_clear_submit">
       <button className="alphaButton">clear bet</button>
@@ -88,6 +95,7 @@ const LivMan = ({ EntityName, Market, CalcProb, BookieOdds, Alpha, KellyCriterio
           <td className="tableCell_alpha">{KellyCriterion}</td>
           <td className="tableCell_alpha">{FixtureId}</td>
           <td className="tableCell_alpha">{TeamId}</td>
+          <td className="tableCell_alpha" contenteditable="true">-</td>
 {/*           <td className="tableCell_alpha_editable"><input
         id="myInput"  
         type="text"

@@ -5,9 +5,10 @@
 
 /* Header */
 .header_alpha {
-  background-color:rgb(223, 223, 223);
+  background-color:rgb(245, 245, 245);
   display: flex;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 800;
   width: 70%;
   margin: 0 auto;
 }
@@ -15,50 +16,41 @@
 .entityName_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 
 .market_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 .calcProb_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 
 }
 .bookieOdds_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 .alpha_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 .kellyCriterion_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 .fixetureId_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 .teamID_header {
   width: 130px;
   text-align: center;
 
-  border: 1px solid blue;
 }
 .stack_header {
   width: 130px;
   text-align: center;
-  border: 1px solid blue;
 }
 
 /*Cells*/
@@ -66,42 +58,50 @@
 
 .tableCell_alpha_entity_name {
   min-width: 180px;
-  background-color:rgb(223, 223, 223);
 
 }
 
 .tableCell_alpha {
   min-width: 110px;
-  height: 30px;
   text-align: center;
 }
 
-.tableCell_alpha_editable {
-  width: 130px;
+/*Button*/
 
+.button_stack {
+  display: flex;
+  justify-content: center;
+  margin-left: 820px;
+  margin-top: 10px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .alphaButton {
   border: 1px solid black;
-  padding: 1px 10px;
+  padding: 1px 25px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 10px 10px 0px;
+  cursor: pointer;
+  background-color: white;
+  margin-right: 20px;
 }
 
 .button_clear_submit {
   margin-left: 1030px;
 }
 
-#stack {
-  border: 1px solid black;
-  width: 130px;
-}
 
 .aboutSection {
   width: 1000px;
   height: 200px;
   border: 1px solid black;
+  border-radius: 2px;
   margin-bottom: 40px;
   margin-left: 200px;
 }

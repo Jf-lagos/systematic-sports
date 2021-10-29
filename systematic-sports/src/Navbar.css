@@ -5,7 +5,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    background: rgb(223, 223, 223);
+    background-color:rgb(245, 245, 245);
     color: black;
     font-family: Helvetica;
     font-weight: 300;
@@ -25,7 +25,7 @@ body {
 }
 
 .dropbtn {
-    background: rgb(223, 223, 223);
+    background-color:rgb(245, 245, 245);
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -40,7 +40,7 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background: rgb(223, 223, 223);
+    background-color:rgb(245, 245, 245);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -52,7 +52,8 @@ body {
     text-decoration: none;
     display: block;
   }
-  
+
+
   .dropdown-content a:hover {background-color: white;}
   
   .dropdown:hover .dropdown-content {display: block;}

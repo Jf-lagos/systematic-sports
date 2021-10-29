@@ -2,16 +2,15 @@
   
  /* Header */
  .header_goal {
-  background-color:rgb(223, 223, 223);
+  background-color:rgb(245, 245, 245);
   display: flex;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 800;
   width: 70%;
   margin: 0 auto;
+  margin-top: 60px;
  }
   
- .header_goal > div {
-  border: 1px solid blue;
- }
   
   
  .TeamId_goal_header {

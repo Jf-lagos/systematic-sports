@@ -9,16 +9,15 @@
 
   /* Header */
   .header_fixtureA {
-    background-color:rgb(223, 223, 223);
+    background-color:rgb(245, 245, 245);
     display: flex;
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 800;
     width: 70%;
     margin: 0 auto;
   }
   
-  .header_fixtureA> div {
-    border: 1px solid blue;
-  }
+
   
   .teamName_header {
     width: 180px;
@@ -67,6 +66,10 @@
     text-align: center;
     text-decoration: none;
     margin: 10px 30px 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 217px;
   }
 
   
